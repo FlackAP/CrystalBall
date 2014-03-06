@@ -26,8 +26,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+
 - (IBAction)buttonPressed {
-    self.predictionLabel.text = @"YES";
+    NSArray *words = [NSArray arrayWithObjects: @"YES", @"NO", @"GO FUCK YOURSELF", nil ];
+    self.predictionLabel.text = [words objectAtIndex:(rand() % 3)];;
 }
 
 
