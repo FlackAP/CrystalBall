@@ -17,7 +17,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    self.predictions = [NSArray arrayWithObjects: @"YES", @"NO", @"IT IS CERTAIN", @"ABSO-LUTELY!", @"RUDE.", @"GO FUCK YOURSELF", @"ASK AGAIN LATER", nil ];
+	
 }
 
 - (void)didReceiveMemoryWarning
@@ -29,11 +30,9 @@
 
 
 - (IBAction)buttonPressed {
-    NSArray *words = [NSArray arrayWithObjects: @"YES", @"NO", @"GO FUCK YOURSELF", nil ];
-    self.predictionLabel.text = [words objectAtIndex:(rand() % 3)];;
+    
+    self.predictionLabel.text = [self.predictions objectAtIndex:(rand() % 7)];;
 }
-
-
 @end
 
 
