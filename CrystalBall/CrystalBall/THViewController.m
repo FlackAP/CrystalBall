@@ -7,6 +7,8 @@
 //
 
 #import "THViewController.h"
+#import "THCrystalBall.h"
+
 
 @interface THViewController ()
 
@@ -17,8 +19,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.predictions = [NSArray arrayWithObjects: @"YES", @"NO", @"IT IS CERTAIN", @"ABSO-LUTELY!", @"RUDE.", @"GO FUCK YOURSELF", @"ASK AGAIN LATER", nil ];
-	
+    self.crystalBall = [[THCrystalBall alloc] init];
 }
 
 - (void)didReceiveMemoryWarning
@@ -31,9 +32,8 @@
 
 - (IBAction)buttonPressed {
     
-    int random = arc4random_uniform(self.predictions.count);
     
-    self.predictionLabel.text = [self.predictions objectAtIndex: random];
+    self.predictionLabel.text = [self.crystalBall randomPrediction];
 }
 @end
 
