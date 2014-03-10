@@ -31,7 +31,9 @@
 
 - (IBAction)buttonPressed {
     
-    self.predictionLabel.text = [self.predictions objectAtIndex:(rand() % 7)];;
+    int random = arc4random_uniform(self.predictions.count);
+    
+    self.predictionLabel.text = [self.predictions objectAtIndex: random];
 }
 @end
 
