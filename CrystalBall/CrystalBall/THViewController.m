@@ -20,6 +20,7 @@
 {
     [super viewDidLoad];
     self.crystalBall = [[THCrystalBall alloc] init];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -31,8 +32,6 @@
 
 
 - (IBAction)buttonPressed {
-    
-    
     self.predictionLabel.text = [self.crystalBall randomPrediction];
 }
 @end
