@@ -116,8 +116,8 @@
 			isa = PBXGroup;
 			children = (
 				B36E5E2017CCFCD400F74C67 /* Main.storyboard */,
-				B36E5E2317CCFCD400F74C67 /* THViewController.h */,
 				B36E5E2417CCFCD400F74C67 /* THViewController.m */,
+				B36E5E2317CCFCD400F74C67 /* THViewController.h */,
 				B36E5E2617CCFCD400F74C67 /* Images.xcassets */,
 				B36E5E1517CCFCD400F74C67 /* Supporting Files */,
 				06A75F5B18CE457F0080290C /* THCrystalBall.h */,

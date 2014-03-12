@@ -16,36 +16,54 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ask the Magic iOS App" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="230" translatesAutoresizingMaskIntoConstraints="NO" id="bRH-sq-tGX">
-                                <rect key="frame" x="45" y="198" width="230" height="172"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="8dm-cI-2OM">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ask the Magic iOS App" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="230" translatesAutoresizingMaskIntoConstraints="NO" id="bRH-sq-tGX">
+                                <rect key="frame" x="45" y="172" width="230" height="172"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="172" id="bPC-bJ-e7F"/>
+                                    <constraint firstAttribute="width" constant="230" id="w8m-gR-uzD"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="32"/>
                                 <color key="textColor" red="0.50196081399917603" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ueQ-l3-sGM">
-                                <rect key="frame" x="20" y="466" width="280" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ueQ-l3-sGM">
+                                <rect key="frame" x="30" y="446" width="261" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.094117656350135803" green="0.65490198135375977" blue="0.13333334028720856" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="261" id="hB7-H5-8Rk"/>
+                                    <constraint firstAttribute="height" constant="47" id="wxc-RV-YZg"/>
+                                </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <size key="titleShadowOffset" width="8" height="12"/>
-                                <state key="normal" title="Predict">
+                                <state key="normal" backgroundImage="button-off">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="highlighted" backgroundImage="button-on"/>
                                 <connections>
                                     <action selector="buttonPressed" destination="vXZ-lx-hvc" eventType="touchUpInside" id="pza-4a-DUW"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="yes or no questions only, please" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="230" translatesAutoresizingMaskIntoConstraints="NO" id="beB-qL-Ewr">
-                                <rect key="frame" x="45" y="387" width="230" height="62"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.80000001192092896" green="1" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.094117656350135803" green="0.58431375026702881" blue="0.5058823823928833" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstItem="Kmq-t7-ewl" firstAttribute="top" secondItem="8dm-cI-2OM" secondAttribute="bottom" id="3ne-3G-06x"/>
+                            <constraint firstAttribute="centerX" secondItem="ueQ-l3-sGM" secondAttribute="centerX" id="NCt-BL-TBG"/>
+                            <constraint firstAttribute="trailing" secondItem="8dm-cI-2OM" secondAttribute="trailing" id="dZT-2u-mqM"/>
+                            <constraint firstItem="8dm-cI-2OM" firstAttribute="centerY" secondItem="bRH-sq-tGX" secondAttribute="centerY" constant="26" id="jBs-D8-m1v"/>
+                            <constraint firstItem="8dm-cI-2OM" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="jPJ-cD-q0d"/>
+                            <constraint firstItem="8dm-cI-2OM" firstAttribute="centerX" secondItem="bRH-sq-tGX" secondAttribute="centerX" id="nBC-60-ANw"/>
+                            <constraint firstItem="8dm-cI-2OM" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="opR-Aa-ZAA"/>
+                            <constraint firstItem="Kmq-t7-ewl" firstAttribute="top" secondItem="ueQ-l3-sGM" secondAttribute="bottom" constant="75" id="u0V-VP-aOf"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="predictionLabel" destination="bRH-sq-tGX" id="R7S-Ze-OvS"/>
@@ -55,6 +73,11 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="background" width="320" height="568"/>
+        <image name="button-off" width="261" height="49"/>
+        <image name="button-on" width="261" height="47"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
